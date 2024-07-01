@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/fav-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>JHON Hotel / subscribe page</title>
+</head>
+
+<body id="form">
+  <header id="header-section">
+    <div class="container">
+      <div class="content d-flex">
+        <div class="logo">
+          <a href="index.html">JHON</a>
+        </div>
+
+        <div class="toggle-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav class="nav">
+          <div class="menu">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./event.html">eventos</a></li>
+            <li><a href="./contact.html">contato</a></li>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero-section">
+    <div class="hero-image-container">
+      <div class="slide">
+        <div class="content">
+          <div class="title">
+            <span>Participe do evento</span>
+            <h1>Encontro de Executivos Volvo</h1>
+          </div>
+          <img src="./img/slider-3.jpg" alt="slide-3" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <div class="container">
+      <div class="grid">
+        <form method="post" class="form" data-netlify="true">
+          <div class="row">
+            <label for="name">Nome Completo</label><br />
+            <input name="name" id="name" type="text" placeholder="Nome Completo" />
+          </div>
+
+          <div class="row">
+            <label for="email">email</label><br />
+            <input name="email" id="email" type="email" placeholder="Endereço de email" required />
+          </div>
+
+          <div class="row">
+            <label for="phone">Telefone</label><br />
+            <input name="phone" id="phone" type="tel" placeholder="Telefone" />
+          </div>
+
+          <button class="btn" type="submit">cadastrar no evento</button>
+          <h3 id="subscribe-confirmation">Inscrição criada com sucesso!!!</h2>
+
+        </form>
+
+        <div class="contact-info">
+          <h3>Informações adicionais do evento</h3>
+          <div class="m-b">
+            <h5>Local</h5>
+            <p>Andar 2 - reservado</p>
+          </div>
+
+          <div class="m-b">
+            <h5>telefone</h5>
+            <a href="#">(27) 23456789</a>
+          </div>
+
+          <div class="m-b">
+            <h5>endereço de email</h5>
+            <a href="#">volvo@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer-section">
+    <div class="container">
+      <div class="copyright">
+        <p>
+          Copyright © 2024 Todos os direitos reservados
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  const btn = document.querySelector(".btn");
+  const subscribeConfirmation = document.getElementById("subscribe-confirmation");
+
+  btn.addEventListener("click", (event) => {
+    event.preventDefault();
+    subscribeConfirmation.classList.add("show")
+  })
+</script>
+
+</html>
